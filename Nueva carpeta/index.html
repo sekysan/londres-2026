@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Londres en Navidad · 26-29 Nov 2026</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#7c3f2f">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="sticky-nav">
+  <div class="nav-days">
+    <a href="#dia-26">&#128748; Jue 26</a>
+    <a href="#dia-27">&#129429; Vie 27</a>
+    <a href="#dia-28">&#127876; Sab 28</a>
+    <a href="#dia-29">&#128748; Dom 29</a>
+    <a href="#checklist">&#9989; Checklist</a>
+  </div>
+  <div class="nav-actions">
+    <button class="btn-icon" onclick="toggleDark()" title="Modo oscuro">&#127769;</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-date">26 &ndash; 29 Noviembre 2026 &middot; Viaje en familia</div>
+  <h1>Londres<br>en Navidad</h1>
+  <p class="hero-sub">Cuatro dias para descubrir Londres cuando empieza la Navidad: dinosaurios, luces, juguetes, autobus rojo, el London Eye y Winter Wonderland.</p>
+  <div class="countdown-container">
+    <div class="countdown-unit"><div class="countdown-num" id="cd-d">--</div><div class="countdown-label">dias</div></div>
+    <div class="countdown-sep">:</div>
+    <div class="countdown-unit"><div class="countdown-num" id="cd-h">--</div><div class="countdown-label">horas</div></div>
+    <div class="countdown-sep">:</div>
+    <div class="countdown-unit"><div class="countdown-num" id="cd-m">--</div><div class="countdown-label">min</div></div>
+    <div class="countdown-sep">:</div>
+    <div class="countdown-unit"><div class="countdown-num" id="cd-s">--</div><div class="countdown-label">seg</div></div>
+  </div>
+  <div class="hero-chips">
+    <span class="chip">4 dias</span>
+    <span class="chip">&#127876; Navidad</span>
+    <span class="chip">&#127905; London Eye</span>
+    <span class="chip">&#128662; Bus rojo</span>
+    <span class="chip">&#129429; Dinosaurios</span>
+  </div>
+</section>
+
+<div class="progress-bar-container">
+  <span>Checklist del viaje:</span>
+  <div class="progress-bar"><div class="progress-fill" id="prog-fill" style="width:0%"></div></div>
+  <span id="progress-text">0 / 12</span>
+</div>
+
+<div class="container">
+
+<!-- ===== DIA 26 ===== -->
+<section class="day-section" id="dia-26">
+  <div class="day-header">
+    <span class="day-label">Jueves 26</span>
+    <h2 class="day-title">&#128748; Llegada</h2>
+  </div>
+  <div class="timeline">
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">18:20</span>
+        <span class="activity-emoji">&#9992;&#65039;</span>
+        <div class="activity-content">
+          <div class="activity-name">Aterrizaje en Gatwick</div>
+          <div class="activity-preview">Control de pasaportes. Salida de terminal ~19:00-19:45</div>
+          <div class="activity-tags"><span class="tag tag-free">Incluido</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Gatwick Airport, South Terminal</span></div>
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Control de pasaportes UE/no-UE. Seguir señales a South Terminal para el tren.</span></div>
+        <div class="detail-tip">Si la cola es larga, espera a que baje antes de hacer cola. La terminal tiene bancos y agua.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">~19:30</span>
+        <span class="activity-emoji">&#128650;</span>
+        <div class="activity-content">
+          <div class="activity-name">Thameslink hasta Farringdon</div>
+          <div class="activity-preview">Estacion en South Terminal. 40-60 min. Billete online o maquina.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~17 libras adulto</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Estacion en South Terminal, 5 min andando desde llegadas (desde North Terminal shuttle gratis 2 min)</span></div>
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Trenes directos Bedford/Cambridge/Peterborough/Luton. Todos paran en Farringdon. Elige uno de ~40 min.</span></div>
+        <div class="detail-row"><span class="detail-icon">&#128279;</span><a href="https://www.thetrainline.com" target="_blank">Comprar billete en thetrainline.com</a></div>
+        <div class="detail-tip">Compra el billete Gatwick-Farringdon online (codigo de barras) o en las maquinas.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">~20:30</span>
+        <span class="activity-emoji">&#128647;</span>
+        <div class="activity-content">
+          <div class="activity-name">Farringdon a Paddington &mdash; Elizabeth Line</div>
+          <div class="activity-preview">Cambio a Elizabeth line, direccion oeste. ~10 min. Del anden al hotel 5-6 min.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~2.80 libras</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Usar tarjeta de pago sin contacto o Oyster card. La Elizabeth Line es nueva, muy comoda, busca el cartel purpura.</span></div>
+        <div class="detail-tip">Si es tarde y hay poca gente, el Uber desde Farringdon a Paddington sale ~12 libras.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">~21:00</span>
+        <span class="activity-emoji">&#127829;</span>
+        <div class="activity-content">
+          <div class="activity-name">Cena en Market Halls Paddington</div>
+          <div class="activity-preview">Pegado a la estacion. Cocinas abiertas hasta ~22:00.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~15-20 libras pp</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Market Halls Paddington, Praed St, W2 1HQ</span></div>
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Si llegas tarde: M&S Simply Food (hasta 23:00), Sainsbury's Local (medianoche) o Tesco Express South Wharf Rd (24h).</span></div>
+        <div class="detail-tip">Comprar tambien desayuno para el viernes.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">21:30</span>
+        <span class="activity-emoji">&#127876;</span>
+        <div class="activity-content">
+          <div class="activity-name">Primer paseo navideno</div>
+          <div class="activity-preview">Un primer contacto con el ambiente navideno de Londres.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Paseo corto por los alrededores del hotel para ver las primeras luces navidenas de Londres.</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== DIA 27 ===== -->
+<section class="day-section" id="dia-27">
+  <div class="day-header">
+    <span class="day-label">Viernes 27</span>
+    <h2 class="day-title">&#129429; Dinosaurios + Navidad</h2>
+  </div>
+  <div class="timeline">
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">09:20</span>
+        <span class="activity-emoji">&#128647;</span>
+        <div class="activity-content">
+          <div class="activity-name">Hotel al Natural History Museum</div>
+          <div class="activity-preview">Paddington a pie 5-6 min, Circle/District hasta South Kensington. Llegar 10:00.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~2.80 libras</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Desde South Kensington hay tunel peatonal directo al museo (~5 min). Llegar antes de las 10:15.</span></div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">10:15</span>
+        <span class="activity-emoji">&#129429;</span>
+        <div class="activity-content">
+          <div class="activity-name">Natural History Museum</div>
+          <div class="activity-preview">Entrada con franja de las 10:15. Dinosaurios, Hintze Hall, Earth Hall y Mammals.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span><span class="tag tag-book">Reservar franja</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Cromwell Rd, South Kensington, SW7 5BD</span></div>
+        <div class="detail-row"><span class="detail-icon">&#128279;</span><a href="https://www.nhm.ac.uk" target="_blank">nhm.ac.uk &mdash; Reservar entrada gratuita con franja horaria</a></div>
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Imprescindible: galeria dinosaurios (Blue Zone), Hintze Hall con la ballena azul, Earth Hall con el meteorito.</span></div>
+        <div class="detail-tip">El museo es enorme. Prioriza: Blue Zone (dinosaurios) y Hintze Hall. El resto es bonus.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">13:00</span>
+        <span class="activity-emoji">&#127869;&#65039;</span>
+        <div class="activity-content">
+          <div class="activity-name">Almuerzo en Mercato Mayfair</div>
+          <div class="activity-preview">Food hall en la iglesia de St Mark's. Abre 12:00, no hace falta reservar.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~15-20 libras pp</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>St Mark's Church, North Audley St, W1K 6ZA</span></div>
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Desde museo: tunel a South Kensington, Piccadilly line a Green Park (3 paradas), Jubilee a Bond Street (1 parada). ~35 min.</span></div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">14:15</span>
+        <span class="activity-emoji">&#10024;</span>
+        <div class="activity-content">
+          <div class="activity-name">Selfridges y Oxford Street</div>
+          <div class="activity-preview">Ventanas navidenas de Selfridges y luces de Oxford Street (tema Harry Potter este año). Es Black Friday.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Selfridges, 400 Oxford St, W1A 1AB. A 5 min andando de Mercato Mayfair.</span></div>
+        <div class="detail-tip">Es Black Friday: habra mucha gente. Las ventanas navidenas estan en la fachada principal de Selfridges.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">16:45</span>
+        <span class="activity-emoji">&#127776;</span>
+        <div class="activity-content">
+          <div class="activity-name">Hacia Winter Wonderland</div>
+          <div class="activity-preview">Andando por Oxford Street hasta Marble Arch (~15 min). Entrada Red Gate o Gold Gate.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis entrar</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Red Gate (norte, familiar y tranquila) o Gold Gate (principal). Entrada libre al recinto.</span></div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">17:00</span>
+        <span class="activity-emoji">&#127904;</span>
+        <div class="activity-content">
+          <div class="activity-name">Winter Wonderland</div>
+          <div class="activity-preview">Entrada con franja 17:00-18:00. Luces, atracciones, mercados y cena dentro del recinto.</div>
+          <div class="activity-tags"><span class="tag tag-book">Reservar franja</span><span class="tag tag-paid">Atracciones aparte</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Hyde Park, entrada por Marble Arch (Red Gate, norte)</span></div>
+        <div class="detail-row"><span class="detail-icon">&#128279;</span><a href="https://hydeparkwinterwonderland.com" target="_blank">hydeparkwinterwonderland.com &mdash; Reservar franja horaria</a></div>
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Hay que entrar dentro de la franja 17:00-18:00. Dentro: luces navidenas, mercados, pistas de hielo, atracciones y puestos de comida.</span></div>
+        <div class="detail-tip">Lleva cash o tarjeta para las atracciones. Reservar franja con antelacion es obligatorio y gratuito.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">21:00+</span>
+        <span class="activity-emoji">&#127769;</span>
+        <div class="activity-content">
+          <div class="activity-name">Regreso al hotel</div>
+          <div class="activity-preview">A pie hasta Paddington (~12 min segun Winter Wonderland) o hasta el hotel.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Winter Wonderland queda a 12 min andando de Paddington segun el mapa. Tambien hay Uber o metro desde Marble Arch.</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== DIA 28 ===== -->
+<section class="day-section" id="dia-28">
+  <div class="day-header">
+    <span class="day-label">Sabado 28</span>
+    <h2 class="day-title">&#127876; Londres + Navidad</h2>
+  </div>
+  <div class="timeline">
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">09:30</span>
+        <span class="activity-emoji">&#127968;</span>
+        <div class="activity-content">
+          <div class="activity-name">Salida del hotel &mdash; Paddington</div>
+          <div class="activity-preview">La estacion esta a 5 min andando del hotel.</div>
+          <div class="activity-tags"><span class="tag tag-free">Incluido</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Desayunar en el hotel o en algun cafe de la estacion antes de salir.</span></div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">10:15</span>
+        <span class="activity-emoji">&#127795;</span>
+        <div class="activity-content">
+          <div class="activity-name">St James's Park &rarr; Westminster</div>
+          <div class="activity-preview">Paseo hacia el Tamesis por el parque real mas bonito de Londres.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Desde Paddington: Circle/District hasta St James's Park o Victoria. El parque es precioso en otono/invierno.</span></div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">11:15</span>
+        <span class="activity-emoji">&#128336;</span>
+        <div class="activity-content">
+          <div class="activity-name">Big Ben + Westminster Bridge</div>
+          <div class="activity-preview">Fotos y camino al London Eye. El puente da la mejor vista del Big Ben.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Westminster Bridge, Westminster, SW1A 2JR</span></div>
+        <div class="detail-tip">La foto clasica: Big Ben desde el centro del puente con la Elizabeth Tower al fondo.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">12:15</span>
+        <span class="activity-emoji">&#127905;</span>
+        <div class="activity-content">
+          <div class="activity-name">London Eye (desde fuera)</div>
+          <div class="activity-preview">Lo vemos desde fuera, sin subir. Mejor foto desde la orilla norte.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>La mejor foto del London Eye es desde el puente de Westminster o desde la orilla norte del Tamesis.</span></div>
+        <div class="detail-tip">Si alguien quiere subir: entradas ~£30 adulto, reservar online con antelacion en londoneye.com.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">12:45</span>
+        <span class="activity-emoji">&#127912;</span>
+        <div class="activity-content">
+          <div class="activity-name">Leake Street Graffiti Tunnel</div>
+          <div class="activity-preview">Arte urbano bajo Waterloo. Unos 20-25 min.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Leake St, Waterloo, SE1 7NN. Desde London Eye ~8 min andando.</span></div>
+        <div class="detail-tip">El tunel cambia constantemente. Siempre hay artistas trabajando. Es el tunel de Banksy.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">13:30</span>
+        <span class="activity-emoji">&#127869;&#65039;</span>
+        <div class="activity-content">
+          <div class="activity-name">Almuerzo por Waterloo / South Bank</div>
+          <div class="activity-preview">Zona con muchas opciones junto al Tamesis.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~12-18 libras pp</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Opciones: Borough Market (10 min), Flat Iron Square, o pubs clasicos de Waterloo.</span></div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">14:30</span>
+        <span class="activity-emoji">&#128647;</span>
+        <div class="activity-content">
+          <div class="activity-name">Waterloo &rarr; Piccadilly Circus</div>
+          <div class="activity-preview">Bakerloo line, 3 paradas (~5 min).</div>
+          <div class="activity-tags"><span class="tag tag-paid">~2.80 libras</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Bakerloo line direction Harrow & Wealdstone. Bajar en Piccadilly Circus.</span></div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">14:45</span>
+        <span class="activity-emoji">&#127873;</span>
+        <div class="activity-content">
+          <div class="activity-name">Hamleys</div>
+          <div class="activity-preview">La tienda de juguetes de Regent Street. Fin de semana de Black Friday: puede haber colas.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis entrar</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Hamleys, 188-196 Regent St, W1B 5BT. A 5 min de Piccadilly Circus.</span></div>
+        <div class="detail-tip">7 plantas de juguetes. Los empleados hacen demostraciones en cada planta. Imprescindible con ninos.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">15:45</span>
+        <span class="activity-emoji">&#129521;</span>
+        <div class="activity-content">
+          <div class="activity-name">LEGO Store Leicester Square</div>
+          <div class="activity-preview">A unos 10 min andando desde Hamleys.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis entrar</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>LEGO Store, 3 Swiss Court, Leicester Square, W1D 6AP</span></div>
+        <div class="detail-tip">La tienda mas grande de Europa. Tiene mosaicos personalizados y sets exclusivos.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">16:30</span>
+        <span class="activity-emoji">&#128270;</span>
+        <div class="activity-content">
+          <div class="activity-name">Covent Garden</div>
+          <div class="activity-preview">Arbol gigante, campanas y decoracion navidena, con las luces ya encendidas al anochecer.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Covent Garden Piazza, WC2E 8RF. Desde Leicester Square ~8 min andando.</span></div>
+        <div class="detail-tip">La mision navidena: busca el arbol gigante y las campanas gigantes. Foto obligatoria.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">17:15</span>
+        <span class="activity-emoji">&#128662;</span>
+        <div class="activity-content">
+          <div class="activity-name">Autobus rojo (linea 15)</div>
+          <div class="activity-preview">Desde Strand/Aldwych hasta Tower Hill: ~20-25 min pasando por Fleet Street y St Paul's.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~2.80 libras</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Parada: Strand/Aldwych (a 10 min andando de Covent Garden). Pasa cada 8-10 min.</span></div>
+        <div class="detail-tip">Sube arriba del todo del bus para las mejores vistas. Ruta clasica de Londres.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">17:45</span>
+        <span class="activity-emoji">&#10024;</span>
+        <div class="activity-content">
+          <div class="activity-name">St Katharine Docks</div>
+          <div class="activity-preview">Luces navidenas y mercadillo en Marble Quay, delante del Dickens Inn. Gratis y abierto 11:00-20:00.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>St Katharine Docks, E1W 1AT. Desde Tower Hill ~5 min andando.</span></div>
+        <div class="detail-tip">Luces encendidas desde el 19 de noviembre. Mercadillo navideno en Marble Quay. Ambiente muy especial junto al agua.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">18:15</span>
+        <span class="activity-emoji">&#127869;&#65039;</span>
+        <div class="activity-content">
+          <div class="activity-name">Cena por St Katharine Docks</div>
+          <div class="activity-preview">The Dickens Inn esta en la ruta. Reservar con antelacion.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~20-30 libras pp</span><span class="tag tag-book">Recomendable reservar</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128279;</span><a href="https://www.dickensinn.co.uk" target="_blank">dickensinn.co.uk &mdash; Pub historico en el dique</a></div>
+        <div class="detail-tip">Si no hay mesa en Dickens Inn, hay varios restaurantes dentro del complejo de St Katharine Docks.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">19:30</span>
+        <span class="activity-emoji">&#127758;</span>
+        <div class="activity-content">
+          <div class="activity-name">Tower Bridge iluminado</div>
+          <div class="activity-preview">Foto de cierre del dia. El puente iluminado por la noche es espectacular.</div>
+          <div class="activity-tags"><span class="tag tag-free">Gratis</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Tower Bridge, SE1 2UP. A 5 min andando de St Katharine Docks.</span></div>
+        <div class="detail-tip">Mejor foto: desde la orilla norte mirando al sur, o desde el puente mirando al este con el Tower of London al fondo.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">20:00</span>
+        <span class="activity-emoji">&#128647;</span>
+        <div class="activity-content">
+          <div class="activity-name">Regreso a Paddington</div>
+          <div class="activity-preview">Metro: Circle line desde Tower Hill hasta Paddington. ~20 min.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~2.80 libras</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Circle line direction Hammersmith & City, bajar en Paddington. Comprobar en TfL Go.</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== DIA 29 ===== -->
+<section class="day-section" id="dia-29">
+  <div class="day-header">
+    <span class="day-label">Domingo 29</span>
+    <h2 class="day-title">&#128748; Regreso</h2>
+  </div>
+  <div class="timeline">
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">08:00</span>
+        <span class="activity-emoji">&#9749;</span>
+        <div class="activity-content">
+          <div class="activity-name">Desayuno + checkout</div>
+          <div class="activity-preview">Salida del hotel. Dejar maletas en consigna si es posible.</div>
+          <div class="activity-tags"><span class="tag tag-free">Incluido</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Hacer checkout a las 8:00. Muchos hoteles guardan maletas gratis si quieres dar un paseo antes del vuelo.</span></div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
+        <span class="activity-time">08:20</span>
+        <span class="activity-emoji">&#128650;</span>
+        <div class="activity-content">
+          <div class="activity-name">Paddington &rarr; Gatwick</div>
+          <div class="activity-preview">Circle line a Victoria + Gatwick Express (30 min). Llegada ~10:00 para el vuelo de las 12:15.</div>
+          <div class="activity-tags"><span class="tag tag-paid">~20 libras pp</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Paddington &rarr; Victoria (Circle line, 5 min) &rarr; Gatwick Express (30 min non-stop). Llega a Gatwick South Terminal.</span></div>
+        <div class="detail-row"><span class="detail-icon">&#128279;</span><a href="https://www.gatwickexpress.com" target="_blank">gatwickexpress.com &mdash; Billete Gatwick Express</a></div>
+
+        <div class="detail-tip">Comprobar obras en National Rail. El Thameslink desde Victoria tambien funciona como alternativa mas economica.</div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="activity open" onclick="toggle(this)">
+
+      <div class="activity-header">
+
+        <span class="activity-time">12:15</span>
+
+        <span class="activity-emoji">&#9992;&#65039;</span>
+
+        <div class="activity-content">
+
+          <div class="activity-name">Vuelo de regreso &mdash; Llegada Alicante 15:50</div>
+
+          <div class="activity-preview">Embarque recomendado 2h antes. Facturacion online ya hecha.</div>
+
+          <div class="activity-tags"><span class="tag tag-free">Incluido</span></div>
+
+        </div>
+
+        <span class="activity-chevron">&#9660;</span>
+
+      </div>
+
+      <div class="activity-detail">
+
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Llegada prevista a Alicante a las 15:50. Fin del viaje!</span></div>
+
+        <div class="detail-tip">Recordar: liquidos en bolsa zip, equipaje de mano dentro del limite de la aerolinea.</div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ===== MISION ===== -->
+
+<div class="section-block" id="mision">
+
+  <h2>&#127919; Mision: encontrar la Navidad</h2>
+
+  <div class="mission-cards">
+
+    <div class="mission-card">
+
+      <div class="m-icon">&#127876;</div>
+
+      <div class="m-title">El arbol gigante</div>
+
+      <div class="m-desc">Encuentralo en Covent Garden el sabado.</div>
+
+    </div>
+
+    <div class="mission-card">
+
+      <div class="m-icon">&#128276;</div>
+
+      <div class="m-title">Las campanas</div>
+
+      <div class="m-desc">Localiza las grandes decoraciones navidenas.</div>
+
+    </div>
+
+    <div class="mission-card">
+
+      <div class="m-icon">&#10024;</div>
+
+      <div class="m-title">Las luces</div>
+
+      <div class="m-desc">St Katharine Docks, Tower Bridge y Covent Garden.</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ===== CHECKLIST ===== -->
+
+<div class="section-block" id="checklist">
+
+  <h2>&#9989; Checklist del viaje</h2>
+
+  <p style="font-size:.82rem;color:var(--muted);font-family:system-ui,sans-serif;margin-bottom:.75rem;">Se guarda automaticamente en tu movil. Cada persona marca lo suyo.</p>
+
+  <div class="checklist-grid" id="checklist-grid">
+
+    <div class="check-item" onclick="checkItem(this,'Dinosaurios')"><div class="check-box"></div>&#129429; Dinosaurios</div>
+
+    <div class="check-item" onclick="checkItem(this,'Mercato')"><div class="check-box"></div>&#127869;&#65039; Mercato Mayfair</div>
+
+    <div class="check-item" onclick="checkItem(this,'WinterWonderland')"><div class="check-box"></div>&#127904; Winter Wonderland</div>
+
+    <div class="check-item" onclick="checkItem(this,'LondonEye')"><div class="check-box"></div>&#127905; London Eye</div>
+
+    <div class="check-item" onclick="checkItem(this,'Metro')"><div class="check-box"></div>&#128647; Metro de Londres</div>
+
+    <div class="check-item" onclick="checkItem(this,'BusRojo')"><div class="check-box"></div>&#128662; Autobus rojo</div>
+
+    <div class="check-item" onclick="checkItem(this,'Hamleys')"><div class="check-box"></div>&#127873; Hamleys</div>
+
+    <div class="check-item" onclick="checkItem(this,'LEGO')"><div class="check-box"></div>&#129521; LEGO Store</div>
+
+    <div class="check-item" onclick="checkItem(this,'LeakeStreet')"><div class="check-box"></div>&#127912; Leake Street</div>
+
+    <div class="check-item" onclick="checkItem(this,'CoventGarden')"><div class="check-box"></div>&#128270; Arbol Covent Garden</div>
+
+    <div class="check-item" onclick="checkItem(this,'StKatharine')"><div class="check-box"></div>&#10024; St Katharine Docks</div>
+
+    <div class="check-item" onclick="checkItem(this,'TowerBridge')"><div class="check-box"></div>&#127758; Londres iluminado</div>
+
+  </div>
+
+</div>
+
+
+
+</div><!-- /container -->
+
+
+
+<footer>
+
+  <strong>Londres en Navidad &middot; 26-29 noviembre 2026</strong><br>
+
+  Viaje en familia &middot; Hecho con &#10084;&#65039;
+
+</footer>
+
+
+
+<script>
+
+// COUNTDOWN
+
+function updateCountdown() {
+
+  var target = new Date('2026-11-26T18:20:00');
+
+  var now = new Date();
+
+  var diff = target - now;
+
+  if (diff <= 0) {
+
+    document.getElementById('cd-d').textContent = '0';
+
+    document.getElementById('cd-h').textContent = '0';
+
+    document.getElementById('cd-m').textContent = '0';
+
+    document.getElementById('cd-s').textContent = '0';
+
+    return;
+
+  }
+
+  var d = Math.floor(diff / 86400000);
+
+  var h = Math.floor((diff % 86400000) / 3600000);
+
+  var m = Math.floor((diff % 3600000) / 60000);
+
+  var s = Math.floor((diff % 60000) / 1000);
+
+  document.getElementById('cd-d').textContent = d;
+
+  document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+
+  document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+
+  document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown, 1000);
+
+
+
+// TOGGLE ACTIVITY
+
+function toggle(el) {
+
+  el.classList.toggle('open');
+
+}
+
+
+
+// DARK MODE
+
+function toggleDark() {
+
+  document.body.classList.toggle('dark');
+
+  localStorage.setItem('dark', document.body.classList.contains('dark') ? '1' : '0');
+
+}
+
+if (localStorage.getItem('dark') === '1') document.body.classList.add('dark');
+
+
+
+// CHECKLIST
+
+var TOTAL = 12;
+
+function checkItem(el, key) {
+
+  el.classList.toggle('checked');
+
+  var box = el.querySelector('.check-box');
+
+  box.textContent = el.classList.contains('checked') ? '✓' : '';
+
+  var checked = JSON.parse(localStorage.getItem('checklist') || '{}');
+
+  if (el.classList.contains('checked')) {
+
+    checked[key] = true;
+
+  } else {
+
+    delete checked[key];
+
+  }
+
+  localStorage.setItem('checklist', JSON.stringify(checked));
+
+  updateProgress();
+
+}
+
+function updateProgress() {
+
+  var checked = JSON.parse(localStorage.getItem('checklist') || '{}');
+
+  var count = Object.keys(checked).length;
+
+  var pct = Math.round(count / TOTAL * 100);
+
+  document.getElementById('prog-fill').style.width = pct + '%';
+
+  document.getElementById('progress-text').textContent = count + ' / ' + TOTAL;
+
+}
+
+function loadChecklist() {
+
+  var checked = JSON.parse(localStorage.getItem('checklist') || '{}');
+
+  var items = document.querySelectorAll('.check-item');
+
+  items.forEach(function(el) {
+
+    var onclick = el.getAttribute('onclick');
+
+    var match = onclick && onclick.match(/'([^']+)'/);
+
+    if (match && checked[match[1]]) {
+
+      el.classList.add('checked');
+
+      el.querySelector('.check-box').textContent = '✓';
+
+    }
+
+  });
+
+  updateProgress();
+
+}
+
+loadChecklist();
+
+
+
+// NAV ACTIVE
+
+function updateNav() {
+
+  var sections = ['dia-26','dia-27','dia-28','dia-29','checklist'];
+
+  var scrollY = window.scrollY + 80;
+
+  var active = sections[0];
+
+  sections.forEach(function(id) {
+
+    var el = document.getElementById(id);
+
+    if (el && el.offsetTop <= scrollY) active = id;
+
+  });
+
+  document.querySelectorAll('.nav-days a').forEach(function(a) {
+
+    a.classList.toggle('active', a.getAttribute('href') === '#' + active);
+
+  });
+
+}
+
+window.addEventListener('scroll', updateNav);
+
+updateNav();
+
+
+
+// SERVICE WORKER
+
+if ('serviceWorker' in navigator) {
+
+  navigator.serviceWorker.register('sw.js').catch(function(){});
+
+}
+
+</script>
+
+</body>
+
+</html>
