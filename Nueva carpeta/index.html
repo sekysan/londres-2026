@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Londres en Navidad · 26-29 Nov 2026</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
   <meta name="theme-color" content="#7c3f2f">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -40,7 +41,7 @@
     <span class="chip">4 dias</span>
     <span class="chip">&#127876; Navidad</span>
     <span class="chip">&#127905; London Eye</span>
-    <span class="chip">&#128662; Bus rojo</span>
+    <span class="chip">&#128652; Bus rojo</span>
     <span class="chip">&#129429; Dinosaurios</span>
   </div>
 </section>
@@ -48,7 +49,7 @@
 <div class="progress-bar-container">
   <span>Checklist del viaje:</span>
   <div class="progress-bar"><div class="progress-fill" id="prog-fill" style="width:0%"></div></div>
-  <span id="progress-text">0 / 12</span>
+  <span id="progress-text">0 / 14</span>
 </div>
 
 <div class="container">
@@ -197,18 +198,37 @@
 
     <div class="activity open" onclick="toggle(this)">
       <div class="activity-header">
+        <span class="activity-time">12:15</span>
+        <span class="activity-emoji">&#128652;</span>
+        <div class="activity-content">
+          <div class="activity-name">Museo a Mercato Mayfair &mdash; autobus 74</div>
+          <div class="activity-preview">Directo, sin cambios, cada 8-10 min. ~20-25 min hasta Marble Arch + 5 min andando.</div>
+          <div class="activity-tags"><span class="tag tag-paid">Tarjeta sin contacto</span></div>
+        </div>
+        <span class="activity-chevron">&#9660;</span>
+      </div>
+      <div class="activity-detail">
+        <div class="detail-row"><span class="detail-icon">&#128205;</span><span>Parada Natural History Museum / Queen's Gate (Cromwell Rd), direccion Baker Street. Bajar en Marble Arch.</span></div>
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Plan B si hay mucho tr&aacute;fico (Black Friday, Park Lane): Piccadilly line a Green Park y Jubilee line a Bond Street, ~35 min.</span></div>
+        <div class="detail-tip">Sois 7: si el bus va lleno, esperad al siguiente y quedad en Marble Arch.</div>
+      </div>
+    </div>
+
+    <div class="activity open" onclick="toggle(this)">
+      <div class="activity-header">
         <span class="activity-time">13:00</span>
         <span class="activity-emoji">&#127869;&#65039;</span>
         <div class="activity-content">
           <div class="activity-name">Almuerzo en Mercato Mayfair</div>
-          <div class="activity-preview">Food hall en la iglesia de St Mark's. Abre 12:00, no hace falta reservar.</div>
+          <div class="activity-preview">Food hall en la iglesia de St Mark's. Abre 12:00. Sois 7: reservar o llegar sobre las 12:45.</div>
           <div class="activity-tags"><span class="tag tag-paid">~15-20 libras pp</span></div>
         </div>
         <span class="activity-chevron">&#9660;</span>
       </div>
       <div class="activity-detail">
         <div class="detail-row"><span class="detail-icon">&#128205;</span><span>St Mark's Church, North Audley St, W1K 6ZA</span></div>
-        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Desde museo: tunel a South Kensington, Piccadilly line a Green Park (3 paradas), Jubilee a Bond Street (1 parada). ~35 min.</span></div>
+        <div class="detail-tip">Ideas con ni&ntilde;os: Fresco (pizza), Dez Amore (pasta), Steamy &amp; Co (baos), Beast &amp; Field (hamburguesas) y helado de Badiani. Un adulto guarda mesa mientras los demas piden.</div>
+        <div class="detail-row"><span class="detail-icon">&#8505;&#65039;</span><span>Reserva: Visit London dice que los grupos de 6+ pueden reservar; otras fuentes no coinciden. Llamar al 020 7403 0930 para confirmar.</span></div>
       </div>
     </div>
 
@@ -460,7 +480,7 @@
     <div class="activity open" onclick="toggle(this)">
       <div class="activity-header">
         <span class="activity-time">17:15</span>
-        <span class="activity-emoji">&#128662;</span>
+        <span class="activity-emoji">&#128652;</span>
         <div class="activity-content">
           <div class="activity-name">Autobus rojo (linea 15)</div>
           <div class="activity-preview">Desde Strand/Aldwych hasta Tower Hill: ~20-25 min pasando por Fleet Street y St Paul's.</div>
@@ -531,7 +551,7 @@
         <span class="activity-emoji">&#128647;</span>
         <div class="activity-content">
           <div class="activity-name">Regreso a Paddington</div>
-          <div class="activity-preview">Metro: Circle line desde Tower Hill hasta Paddington. ~20 min.</div>
+          <div class="activity-preview">Metro: Circle line desde Tower Hill hasta Paddington. ~35-40 min (estimacion).</div>
           <div class="activity-tags"><span class="tag tag-paid">~2.80 libras</span></div>
         </div>
         <span class="activity-chevron">&#9660;</span>
@@ -685,6 +705,10 @@
 
   <div class="checklist-grid" id="checklist-grid">
 
+    <div class="check-item" onclick="checkItem(this,'ETA')"><div class="check-box"></div>&#128706; ETA de los 7 viajeros</div>
+
+    <div class="check-item" onclick="checkItem(this,'Entradas')"><div class="check-box"></div>&#127903;&#65039; Entradas NHM y Winter Wonderland</div>
+
     <div class="check-item" onclick="checkItem(this,'Dinosaurios')"><div class="check-box"></div>&#129429; Dinosaurios</div>
 
     <div class="check-item" onclick="checkItem(this,'Mercato')"><div class="check-box"></div>&#127869;&#65039; Mercato Mayfair</div>
@@ -695,7 +719,7 @@
 
     <div class="check-item" onclick="checkItem(this,'Metro')"><div class="check-box"></div>&#128647; Metro de Londres</div>
 
-    <div class="check-item" onclick="checkItem(this,'BusRojo')"><div class="check-box"></div>&#128662; Autobus rojo</div>
+    <div class="check-item" onclick="checkItem(this,'BusRojo')"><div class="check-box"></div>&#128652; Autobus rojo</div>
 
     <div class="check-item" onclick="checkItem(this,'Hamleys')"><div class="check-box"></div>&#127873; Hamleys</div>
 
@@ -735,7 +759,7 @@
 
 function updateCountdown() {
 
-  var target = new Date('2026-11-26T18:20:00');
+  var target = new Date('2026-11-26T18:20:00Z');
 
   var now = new Date();
 
@@ -795,17 +819,17 @@ function toggleDark() {
 
   document.body.classList.toggle('dark');
 
-  localStorage.setItem('dark', document.body.classList.contains('dark') ? '1' : '0');
+  localStorage.setItem('londres2026-dark', document.body.classList.contains('dark') ? '1' : '0');
 
 }
 
-if (localStorage.getItem('dark') === '1') document.body.classList.add('dark');
+if (localStorage.getItem('londres2026-dark') === '1') document.body.classList.add('dark');
 
 
 
 // CHECKLIST
 
-var TOTAL = 12;
+var TOTAL = document.querySelectorAll('.check-item').length;
 
 function checkItem(el, key) {
 
@@ -815,7 +839,7 @@ function checkItem(el, key) {
 
   box.textContent = el.classList.contains('checked') ? '✓' : '';
 
-  var checked = JSON.parse(localStorage.getItem('checklist') || '{}');
+  var checked = JSON.parse(localStorage.getItem('londres2026-checklist') || '{}');
 
   if (el.classList.contains('checked')) {
 
@@ -827,7 +851,7 @@ function checkItem(el, key) {
 
   }
 
-  localStorage.setItem('checklist', JSON.stringify(checked));
+  localStorage.setItem('londres2026-checklist', JSON.stringify(checked));
 
   updateProgress();
 
@@ -835,7 +859,7 @@ function checkItem(el, key) {
 
 function updateProgress() {
 
-  var checked = JSON.parse(localStorage.getItem('checklist') || '{}');
+  var checked = JSON.parse(localStorage.getItem('londres2026-checklist') || '{}');
 
   var count = Object.keys(checked).length;
 
@@ -849,7 +873,7 @@ function updateProgress() {
 
 function loadChecklist() {
 
-  var checked = JSON.parse(localStorage.getItem('checklist') || '{}');
+  var checked = JSON.parse(localStorage.getItem('londres2026-checklist') || '{}');
 
   var items = document.querySelectorAll('.check-item');
 
